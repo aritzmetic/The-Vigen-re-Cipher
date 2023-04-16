@@ -22,10 +22,14 @@ class VigenereCipher:
             else:
                 # Determine each letter's numerical value in the message.
                  number = self.alphabet_to_numbers[character]
-                 
-# Calculate the result modulo 26 by adding the total number of the alphabet in the key.
-# Add the alphabet to the ciphertext after converting the encrypted numerical value to a alphabet.
-# Move to the next alphabet in the key.
+                # Calculate the result modulo 26 by adding the total number of the alphabet in the key.
+                 encrypted_number = (number + number_of_key[index_of_key]) % 26
+                # Add the alphabet to the ciphertext after converting the encrypted numerical value to a alphabet.
+                 encrypted_alphabet = self.alphabet[encrypted_number]
+                 cipher_txt += encrypted_alphabet
+                # Move to the next alphabet in the key.
+                 index_of_key = (index_of_key + 1) % len(number_of_key)
+        return cipher_txt
 # Use while loop for a condition-controlled loop
 # Ask the name of the user to create a greeting
 # ask the user to input the message and key
