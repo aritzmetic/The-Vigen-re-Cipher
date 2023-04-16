@@ -21,3 +21,6 @@ https://user-images.githubusercontent.com/112628197/232297927-2e69fdaf-dbfd-4424
 - > It puts the **decision to continue or leave** in the hands of the user.
 - > Displays ASCII art with the use of the **pyfiglet module.**
 
+## **How to run this program?**
+![Screenshot 2023-04-16 185116](https://user-images.githubusercontent.com/112628197/232301972-ba5b3e57-68d3-45eb-8d73-2f849d2ab2d2.png)
+
