@@ -11,9 +11,18 @@ class VigenereCipher:
     def encrypt(self, message, key):
         # convert the key to numerical values
         number_of_key = [self.alphabet_to_numbers[letter] for letter in key]
-        
-# Add the character to the ciphertext without encrypting it if it is not an alphabet.
-# Determine each letter's numerical value in the message.
+
+        # encrypt the message using the Vigenère cipher
+        cipher_txt = ''
+        index_of_key = 0
+        for character in message:
+            # Add the character to the ciphertext without encrypting it if it is not an alphabet.
+            if character not in self.alphabet:
+                cipher_txt += character
+            else:
+                # Determine each letter's numerical value in the message.
+                 number = self.alphabet_to_numbers[character]
+                 
 # Calculate the result modulo 26 by adding the total number of the alphabet in the key.
 # Add the alphabet to the ciphertext after converting the encrypted numerical value to a alphabet.
 # Move to the next alphabet in the key.
