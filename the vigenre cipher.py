@@ -44,4 +44,9 @@ while True:
     ciphertext = cipher.encrypt(message.upper(), key.upper())
     # Display the encrypted message
     print("Yown! The process has been completed! The Ciphertext of your secret message and key is", ciphertext, ".")
-# Ask the user if they want to continue or exit
+    # Ask the user if they want to continue or exit
+    question = input("Would you like to continue?? (yes or no) ")
+    if question.lower() == "no":
+        closing = "Thank you for using AritzMetic's Vigenere Cipherer. Have a nice day!"
+        print(closing)
+        break
