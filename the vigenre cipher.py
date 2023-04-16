@@ -30,9 +30,15 @@ class VigenereCipher:
                 # Move to the next alphabet in the key.
                  index_of_key = (index_of_key + 1) % len(number_of_key)
         return cipher_txt
+
 # Use while loop for a condition-controlled loop
-# Ask the name of the user to create a greeting
-# ask the user to input the message and key
+while True:
+    # Ask the name of the user to create a greeting
+    name = input("Hi Smart Pipol! what is your name?")
+    print("Hi", name, "! AritzMetic is here to help you in Ciphering your code!")
+    # ask the user to input the message and key
+    message = input("What is the message of your secret code?: ")
+    key = input("How about the key of your secret code?: ")
 # Create an instance of VigenereCipher class and encrypt the message using the key
 # Display the encrypted message
 # Ask the user if they want to continue or exit
