@@ -33,3 +33,10 @@ https://user-images.githubusercontent.com/112628197/232297927-2e69fdaf-dbfd-4424
 >6.  Following the successful encryption of your communication, the program will show you the ciphertext that was produced.
 > 7. When prompted, you will be able to choose whether to continue or quit by entering "yes" or "no."
 > 8. When requested to continue or exit the program's window, entering 'no' will cause the program to close.
+
+https://user-images.githubusercontent.com/112628197/232306843-8c3daff0-afbc-4827-8918-2b6a735de54f.mp4
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+**_You are free to get in touch with me, @aritzmetic,  or to report problems directly on this repository if you discover problems with the project. Check out our [contribution guidelines](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors) if you are interested in doing more to help the development of the project. Thank you!_** 
+
