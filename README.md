@@ -24,3 +24,12 @@ https://user-images.githubusercontent.com/112628197/232297927-2e69fdaf-dbfd-4424
 ## **How to run this program?**
 ![Screenshot 2023-04-16 185116](https://user-images.githubusercontent.com/112628197/232301972-ba5b3e57-68d3-45eb-8d73-2f849d2ab2d2.png)
 
+## **How to run this program using IDE?**
+> 1. Launch an IDE (Integrated Development Environment) program like Visual Studio Code or PyCharm.
+> 2. A new Python file needs to be created, and then the code needs to be copied into it.
+> 3. You should use the.py extension when saving the file.
+> 4. You can start the program by either selecting the Run button from the toolbar or pressing the F5 key on your keyboard.
+> 5. To enter your message and key, simply follow the on-screen prompts.
+>6.  Following the successful encryption of your communication, the program will show you the ciphertext that was produced.
+> 7. When prompted, you will be able to choose whether to continue or quit by entering "yes" or "no."
+> 8. When requested to continue or exit the program's window, entering 'no' will cause the program to close.
