@@ -39,6 +39,9 @@ while True:
     # ask the user to input the message and key
     message = input("What is the message of your secret code?: ")
     key = input("How about the key of your secret code?: ")
-# Create an instance of VigenereCipher class and encrypt the message using the key
-# Display the encrypted message
+    # Create an instance of VigenereCipher class and encrypt the message using the key
+    cipher = VigenereCipher()
+    ciphertext = cipher.encrypt(message.upper(), key.upper())
+    # Display the encrypted message
+    print("Yown! The process has been completed! The Ciphertext of your secret message and key is", ciphertext, ".")
 # Ask the user if they want to continue or exit
