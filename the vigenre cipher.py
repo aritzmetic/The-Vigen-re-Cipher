@@ -1,6 +1,12 @@
 # Delera, Aritz B.
 # The Vigenere Code Cipher
 
+# import pyfiglet module
+import pyfiglet
+
+opening = pyfiglet.figlet_format("= O.O.P =", font="starwars")
+print(opening)
+
 # Define a class for Vigenere Cipher
 class VigenereCipher:
     def __init__(self):
@@ -31,22 +37,27 @@ class VigenereCipher:
                  index_of_key = (index_of_key + 1) % len(number_of_key)
         return cipher_txt
 
+# Create an introduction
+print("=" * 61)
+print("\033[32m Welcome to AritzMetic's Vigenère Cipher! \033[0m".center(70, "+"))
+print("=" * 61)
+
 # Use while loop for a condition-controlled loop
 while True:
     # Ask the name of the user to create a greeting
-    name = input("Hi Smart Pipol! what is your name?")
-    print("Hi", name, "! AritzMetic is here to help you in Ciphering your code!")
+    name = input("\033[34mHi Smart Pipol! what is your name?\033[0m")
+    print("\033[40mHi", name, "! AritzMetic is here to help you in Ciphering your code!\033[0m")
     # ask the user to input the message and key
-    message = input("What is the message of your secret code?: ")
-    key = input("How about the key of your secret code?: ")
+    message = input("\033[31mWhat is the message of your secret code?: \033[0m")
+    key = input("\033[32mHow about the key of your secret code?: \033[0m")
     # Create an instance of VigenereCipher class and encrypt the message using the key
     cipher = VigenereCipher()
     ciphertext = cipher.encrypt(message.upper(), key.upper())
     # Display the encrypted message
-    print("Yown! The process has been completed! The Ciphertext of your secret message and key is", ciphertext, ".")
+    print("\033[40mYown! The process has been completed! The Ciphertext of your secret message and key is", ciphertext, ".\033[0m")
     # Ask the user if they want to continue or exit
-    question = input("Would you like to continue?? (yes or no) ")
+    question = input("\033[34mWould you like to continue?? (yes or no): \033[0m")
     if question.lower() == "no":
-        closing = "Thank you for using AritzMetic's Vigenere Cipherer. Have a nice day!"
+        closing = pyfiglet.figlet_format("Thank you for using AritzMetic's Vigenere Cipherer. Have a nice day!", font="puffy")
         print(closing)
         break
