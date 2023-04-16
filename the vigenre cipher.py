@@ -2,8 +2,16 @@
 # The Vigenere Code Cipher
 
 # Define a class for Vigenere Cipher
-# create a dictionary to change the alphabets to numbers
-# convert the key to numerical values
+class VigenereCipher:
+    def __init__(self):
+        # create a dictionary to change the alphabets to numbers
+        self.alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        self.alphabet_to_numbers = {letter: i for i, letter in enumerate(self.alphabet)}
+    
+    def encrypt(self, message, key):
+        # convert the key to numerical values
+        number_of_key = [self.alphabet_to_numbers[letter] for letter in key]
+        
 # Add the character to the ciphertext without encrypting it if it is not an alphabet.
 # Determine each letter's numerical value in the message.
 # Calculate the result modulo 26 by adding the total number of the alphabet in the key.
